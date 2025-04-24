@@ -1,0 +1,229 @@
+#programs {
+  background-color: #E4808D;
+  padding: 6rem 5%;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.programs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.programs-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.programs-title h2 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.star-icon {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.programs-grid .program-card:first-child {
+  border-top-left-radius: 8rem;
+}
+
+.programs-grid .program-card:nth-child(3) {
+  border-top-right-radius: 8rem;
+}
+
+.programs-grid .program-card:nth-child(4) {
+  border-bottom-left-radius: 8rem;
+}
+
+.programs-grid .program-card:last-child {
+  border-bottom-right-radius: 8rem;
+}
+
+.program-card {
+  background-color: #A5C680;
+  padding: 2rem;
+  min-height: 250px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  border: 3px solid #fff;
+}
+
+.program-card:hover {
+  background-color: #70AC2C;
+}
+
+.program-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: white;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.program-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.program-card:hover .program-header {
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.program-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.program-card:hover .program-icon {
+  margin-bottom: 0;
+}
+
+.program-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.program-content .subtitle {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.program-content .description {
+  font-size: 1rem;
+  line-height: 1.4;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-top: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.program-card:hover .description {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 1rem;
+}
+
+.spiral-decoration {
+  position: absolute;
+  bottom: -5rem;
+  right: -3rem;
+  width: 15rem;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Tablet - 2 columns */
+@media (max-width: 1200px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .programs-grid .program-card:nth-child(3) {
+    border-top-right-radius: 0;
+  }
+
+  .programs-grid .program-card:nth-child(2) {
+    border-top-right-radius: 2rem;
+  }
+
+  .programs-grid .program-card:nth-child(4) {
+    border-bottom-left-radius: 0;
+  }
+
+  .programs-grid .program-card:nth-child(5) {
+    border-bottom-left-radius: 2rem;
+  }
+
+  .programs-grid .program-card:last-child {
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+/* Mobile - 1 column */
+@media (max-width: 480px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .programs-grid .program-card {
+    border-radius: 0;
+  }
+
+  .programs-grid .program-card:nth-child(2) {
+    border-top-right-radius: 0rem;
+  }
+
+  .programs-grid .program-card:first-child {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
+  .programs-grid .program-card:nth-child(5) {
+    border-radius: 0;
+  }
+
+  .programs-grid .program-card:last-child {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+
+  .spiral-decoration {
+    width: 10rem;
+    bottom: -3rem;
+    right: -2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-title h2 {
+    font-size: 2.5rem;
+  }
+
+  .star-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .program-card {
+    min-height: 200px;
+  }
+}

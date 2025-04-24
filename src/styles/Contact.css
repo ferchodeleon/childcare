@@ -1,0 +1,145 @@
+#contact {
+  background-color: #A5C680;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 2rem;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact-info h2 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.info-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.home-icon {
+  width: 120px;
+  height: auto;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-item img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.contact-item a,
+.contact-item address {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  flex: 1;
+  max-width: 600px;
+  border-radius: 6rem;
+  overflow: hidden;
+  border: 10px solid #DF5178;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .contact-container {
+    gap: 2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 3rem;
+  }
+
+  .home-icon {
+    width: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .contact-info,
+  .map-container {
+    max-width: 100%;
+  }
+
+  .info-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact-info h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-icon {
+    width: 80px;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .map-container {
+    border-width: 6px;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+} 
