@@ -1,4 +1,4 @@
-#about {
+.aboutUs {
   background-color: #fef6e9;
   padding: 4rem 5%;
   min-height: 60vh;
@@ -7,6 +7,10 @@
   justify-content: center;
   flex-direction: column;
   gap: 8rem;
+}
+
+#about {
+  padding-top: 1rem;
 }
 
 .about-container {
@@ -163,6 +167,9 @@
   .asterisk-icon {
     width: 2rem;
     height: 2rem;
+  }
+  .about-flower {
+    display: none;
   }
 }
 

@@ -39,8 +39,8 @@ const drivesData = [
 
 const AboutUs = () => {
   return (
-    <section id="about">
-      <div className="about-container">
+    <section className="aboutUs">
+      <div id="about" className="about-container">
         <div className="about-image-container">
           <img src={sun} alt="sun icon" className="sun-icon" />
           <div className="image-wrapper">

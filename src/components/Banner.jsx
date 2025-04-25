@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import banner1 from "../assets/images/banner1.png";
-import banner2 from "../assets/images/banner2.png";
+import banner1 from "../assets/images/banner1.webp";
+import banner2 from "../assets/images/banner2.webp";
 import startBanner from "../assets/images/start-banner.png";
 import borderTextBanner from "../assets/images/border-text-banner.png";
 import "swiper/css";

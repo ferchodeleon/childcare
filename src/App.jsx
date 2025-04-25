@@ -11,7 +11,7 @@ function App() {
       <main>
         <Header />
         <Banner id="home" />
-        <AboutUs id="about" />
+        <AboutUs />
         <OurPrograms id="programs" />
         <OurTeam id="team" />
         <Contact id="contact" />
