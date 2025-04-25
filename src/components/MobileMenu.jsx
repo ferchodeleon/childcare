@@ -38,10 +38,10 @@ const MobileMenu = ({ isOpen, onClose, activeSection, scrollToSection }) => {
         </a>
         <a
           className={`nav-link programs ${
-            activeSection === "programs" ? "active" : ""
+            activeSection === "section-programs" ? "active" : ""
           }`}
           onClick={() => {
-            scrollToSection("programs");
+            scrollToSection("section-programs");
             onClose();
           }}
         >

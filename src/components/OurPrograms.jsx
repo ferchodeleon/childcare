@@ -50,7 +50,7 @@ const programsData = [
 const OurPrograms = () => {
   return (
     <section id="programs">
-      <div className="programs-container">
+      <div id="section-programs" className="programs-container">
         <div className="programs-title">
           <img src={star} alt="star icon" className="star-icon" />
           <h2>Our programs</h2>

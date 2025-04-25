@@ -12,9 +12,9 @@ function App() {
         <Header />
         <Banner id="home" />
         <AboutUs />
-        <OurPrograms id="programs" />
+        <OurPrograms />
         <OurTeam />
-        <Contact id="contact" />
+        <Contact />
       </main>
     </>
   );
