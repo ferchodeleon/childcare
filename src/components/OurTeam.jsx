@@ -38,7 +38,7 @@ const OurTeam = () => {
           className="mySwiper"
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         >
-          <SwiperSlide>
+          <SwiperSlide className="swiper-slide-ourTeam">
             <img src={ourTeam1} alt="ourTeam1" />
           </SwiperSlide>
         </Swiper>

@@ -46,10 +46,10 @@ const Banner = () => {
         className="mySwiper"
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
       >
-        <SwiperSlide>
+        <SwiperSlide className="swiper-slide-banner">
           <img src={banner1} alt="banner1" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="swiper-slide-banner">
           <img src={banner2} alt="banner2" />
         </SwiperSlide>
       </Swiper>
