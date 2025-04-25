@@ -71,9 +71,9 @@ const Header = () => {
               </a>
               <a
                 className={`nav-link team ${
-                  activeSection === "team" ? "active" : ""
+                  activeSection === "section-team" ? "active" : ""
                 }`}
-                onClick={() => scrollToSection("team")}
+                onClick={() => scrollToSection("section-team")}
               >
                 Our team
               </a>

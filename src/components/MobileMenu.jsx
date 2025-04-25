@@ -49,10 +49,10 @@ const MobileMenu = ({ isOpen, onClose, activeSection, scrollToSection }) => {
         </a>
         <a
           className={`nav-link team ${
-            activeSection === "team" ? "active" : ""
+            activeSection === "section-team" ? "active" : ""
           }`}
           onClick={() => {
-            scrollToSection("team");
+            scrollToSection("section-team");
             onClose();
           }}
         >

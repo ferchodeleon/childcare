@@ -13,7 +13,7 @@ function App() {
         <Banner id="home" />
         <AboutUs />
         <OurPrograms id="programs" />
-        <OurTeam id="team" />
+        <OurTeam />
         <Contact id="contact" />
       </main>
     </>

@@ -26,7 +26,7 @@ const OurTeam = () => {
 
   return (
     <section id="team">
-      <div className="ourTeam-wrapper">
+      <div id="section-team" className="ourTeam-wrapper">
         <div className="ourTeam-container-top " />
         <div className="ourTeam-container-bottom " />
         <Swiper
