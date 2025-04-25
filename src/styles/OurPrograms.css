@@ -126,6 +126,7 @@
 
 .program-content .description {
   font-size: 1rem;
+  font-weight: 800;
   line-height: 1.4;
   opacity: 0;
   max-height: 0;

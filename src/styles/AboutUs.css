@@ -1,7 +1,7 @@
 #about {
   background-color: #fef6e9;
   padding: 4rem 5%;
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,8 +37,8 @@
 
 .sun-icon {
   position: absolute;
-  top: -2rem;
-  left: -8rem;
+  top: -2%;
+  left: -8%;
   width: 120px;
   height: 120px;
   z-index: 1;
@@ -50,6 +50,7 @@
   overflow: hidden;
   border: 2px dashed #70AC2C;
   padding: 15px;
+  width: 80%;
 }
 
 .main-photo {
