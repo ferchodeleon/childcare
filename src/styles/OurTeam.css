@@ -64,6 +64,9 @@
 }
 
 .ourTeam-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 5%;
   top: 50%;
